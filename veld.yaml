@@ -1,0 +1,13 @@
+
+x-veld:
+  chain:
+
+services:
+  veld:
+    extends:
+      file: ./veld_executable_12_fasttext/veld.yaml
+      service: veld
+    volumes:
+      - ./veld_data_9_we_training_data/data/:/veld/input/
+      - ./veld_data_8_fasttext_models/data/:/veld/output/
+
