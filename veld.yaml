@@ -1,4 +1,5 @@
 
+
 x-veld:
   chain:
 
@@ -16,12 +17,14 @@ services:
       file: ./veld_executable_14_we_evaluation/veld.yaml
       service: veld
     volumes:
-      - ./veld_data_8_fasttext_models/data/m2/:/veld/input/1/
-      - ./veld_data_10_we_evaluation/data/:/veld/input/2/
-      - ./veld_data_10_we_evaluation/data/:/veld/output/
+      - ./veld_data_8_fasttext_models/data/m2/model.bin:/veld/input/model.bin
+      - ./veld_data_8_fasttext_models/data/m2/metadata.yaml:/veld/input/metadata.yaml
+      - ./veld_data_10_we_evaluation/data/eval_data.yaml:/veld/input/eval_data.yaml
+      - ./veld_data_10_we_evaluation/data/summary.yaml:/veld/output/summary.yaml
+      - ./veld_data_10_we_evaluation/data/logs/:/veld/output/logs/
+
     environment:
       MODEL_ARCH: "fasttext_v1"
-      MODEL_ARCH_DESC: "basic implemenation"
       MODEL_ID: "m2"
       MODEL_TRAIN_REPRODUCIBLE: "https://github.com/acdh-oeaw/veld_chain_11_fasttext/commit/7dfa0a6f762d1a8288771aa3f50b6ff88a873cf3"
 
