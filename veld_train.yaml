@@ -15,7 +15,7 @@ services:
       train_data_description: "german wikipedia, subset, txt"
       training_architecture: "fasttext_v1"
       model_path: "/veld/output/data/"
-      model_id: "m3"
+      model_id: "m4"
       vector_size: 200
-      epochs: 5
+      epochs: 50
 
