@@ -1,6 +1,6 @@
-[submodule "veld_executable_12_fasttext"]
+[submodule "veld_code_12_fasttext"]
 	path = veld_code_12_fasttext
-	url = https://github.com/acdh-oeaw/veld_executable_12_fasttext.git
+	url = https://github.com/acdh-oeaw/veld_code_12_fasttext.git
 [submodule "veld_data_9_we_training_data"]
 	path = veld_data_9_we_training_data
 	url = https://gitlab.oeaw.ac.at/acdh-ch/nlp/veld_data_9_we_training_data.git
@@ -10,6 +10,6 @@
 [submodule "veld_data_10_we_evaluation"]
 	path = veld_data_10_we_evaluation
 	url = https://github.com/acdh-oeaw/veld_data_10_we_evaluation.git
-[submodule "veld_executable_14_we_evaluation"]
+[submodule "veld_code_14_we_evaluation"]
 	path = veld_code_14_we_evaluation
-	url = https://github.com/acdh-oeaw/veld_executable_14_we_evaluation.git
+	url = https://github.com/acdh-oeaw/veld_code_14_we_evaluation.git
