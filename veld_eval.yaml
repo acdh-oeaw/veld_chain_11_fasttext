@@ -1,9 +1,12 @@
 x-veld:
   chain:
-    # TODO
     about:
-      description:
+      description: "custom evaluation logic for word2vec, fasttext and glove models"
       topics:
+        - "NLP"
+        - "Machine Learning"
+        - "word embeddings"
+        - "evaluation"
 
 services:
   veld_eval:
@@ -11,12 +14,11 @@ services:
       file: ./veld_code_14_we_evaluation/veld.yaml
       service: veld
     volumes:
-      - ./veld_data_8_fasttext_models/:/veld/input/1/
-      - ./veld_data_10_we_evaluation/:/veld/input/2/
-      - ./veld_data_10_we_evaluation/:/veld/output/
+      - ./veld_data_8_fasttext_models/data/m2/:/veld/input/1/
+      - ./veld_data_10_we_evaluation/evaluation_gold_data/:/veld/input/2/
+      - ./veld_data_10_we_evaluation/evaluation_results/:/veld/output/
     environment:
-      model_path: "/veld/input/1/data/m2/model.bin"
-      model_metadata_path: "/veld/input/1/data/m2/metadata.yaml"
-      eval_data_path: "/veld/input/2/evaluation_gold_data/eval_data.yaml"
-      eval_results_folder: "/veld/output/evaluation_results/"
+      in_1_model_file: "model.bin"
+      in_1_model_metadata_file: "metadata.yaml"
+      in_2_eval_data_file: "eval_data.yaml"
 
