@@ -1,11 +1,10 @@
 x-veld:
   chain:
-    about:
-      description: "a fasttext training and inference jupyter notebook."
-      topics:
-        - "NLP"
-        - "Machine Learning"
-        - "word embeddings"
+    description: "a fasttext training and inference jupyter notebook."
+    topics:
+      - "NLP"
+      - "Machine Learning"
+      - "word embeddings"
 
 services:
   veld_train:

@@ -1,12 +1,11 @@
 x-veld:
   chain:
-    about:
-      description: "custom evaluation logic for word2vec, fasttext and glove models"
-      topics:
-        - "NLP"
-        - "Machine Learning"
-        - "word embeddings"
-        - "evaluation"
+    description: "custom evaluation logic for word2vec, fasttext and glove models"
+    topics:
+      - "NLP"
+      - "Machine Learning"
+      - "word embeddings"
+      - "evaluation"
 
 services:
   veld_eval:
